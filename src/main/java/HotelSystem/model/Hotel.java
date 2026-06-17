@@ -33,5 +33,5 @@ public class Hotel {
 
     @JsonManagedReference
     @OneToMany(mappedBy = "hotel", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Habitacion> habitacion;
+    private List<Habitacion> habitaciones;
 }
