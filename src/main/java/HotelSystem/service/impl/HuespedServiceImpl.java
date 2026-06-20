@@ -63,7 +63,7 @@ public class HuespedServiceImpl implements HuespedService {
 
     @Override
     @Transactional(readOnly = true)
-    public List<Huesped> buscarPorNombreOApellido(String texto) {
-        return huespedRepository.findByNombreContainingIgnoreCaseOrApellidoContainingIgnoreCase(texto);
+    public List<Huesped> buscarPorNombreOApellido(String criterio) {
+        return huespedRepository.findByNombreContainingIgnoreCaseOrApellidoContainingIgnoreCase(criterio, criterio);
     }
 }

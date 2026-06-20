@@ -28,8 +28,8 @@ public class HuespedController {
     }
 
     @GetMapping("/buscar")
-    public ResponseEntity<List<Huesped>> buscarPorNombreOApellido(@RequestParam String nombreOApellido){
-        return ResponseEntity.ok(huespedService.buscarPorNombreOApellido(nombreOApellido));
+    public ResponseEntity<List<Huesped>> buscarPorNombreOApellido(@RequestParam String criterio){
+        return ResponseEntity.ok(huespedService.buscarPorNombreOApellido(criterio));
     }
 
     @PostMapping
