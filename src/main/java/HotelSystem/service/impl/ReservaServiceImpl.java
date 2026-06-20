@@ -62,8 +62,8 @@ public class ReservaServiceImpl implements ReservaService {
 
     @Override
     @Transactional
-    public Reserva actualizar(Reserva reserva) {
-        Reserva entity = reservaRepository.findById(reserva.getId())
+    public Reserva actualizar(Reserva reserva, Long id) {
+        Reserva entity = reservaRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Reserva no encontrada"));
 
         if (reserva.getFechaIngreso() != null) {
