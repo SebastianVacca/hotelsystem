@@ -10,8 +10,8 @@ public interface HabitacionService {
     Optional<Habitacion> buscarPorId(Long id);
     List<Habitacion> listarPorHotel(Long hotelId);
     List<Habitacion> listarDisponiblesPorHotel(Long hotelId);
-    Habitacion crear(Habitacion habitacion);
-    Habitacion actualizar(Habitacion habitacion);
+    Habitacion crear(Habitacion habitacion, Long hotelId);
+    Habitacion actualizar(Habitacion habitacion, Long hotelId);
     void eliminar(Long id);
     List<Habitacion> buscarPorPrecioMaximo(Double precioMaximo);
 }

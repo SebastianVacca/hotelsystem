@@ -11,5 +11,5 @@ import java.util.Optional;
 public interface HuespedRepository extends JpaRepository<Huesped, Long> {
     Optional<Huesped> findByEmail(String email);
     Optional<Huesped> findByDocumentoIdentidad(String documento);
-    List<Huesped> findByNombreContainingIgnoreCaseOrApellidoContainingIgnoreCase(String nombre, String apellido);
+    List<Huesped> findByNombreContainingIgnoreCaseOrApellidoContainingIgnoreCase(String nombre);
 }

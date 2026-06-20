@@ -10,7 +10,7 @@ public interface HotelService {
     Optional<Hotel> buscarPorId(Long id);
     List<Hotel> buscarPorCiudad(String ciudad);
     Hotel crear(Hotel hotel);
-    Hotel actualizar(Hotel hotel);
+    Hotel actualizar(Hotel hotel, Long id);
     void eliminar(Long id);
     List<Hotel> buscarConHabitacionesDisponibles();
 }

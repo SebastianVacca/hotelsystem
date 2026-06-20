@@ -10,6 +10,6 @@ public interface ServicioService {
     List<Servicio> listarDisponibles();
     Optional<Servicio> buscarPorId(Long id);
     Servicio crear(Servicio servicio);
-    Servicio actualizar(Servicio servicio);
+    Servicio actualizar(Long id, Servicio servicio);
     void eliminar(Long id);
 }

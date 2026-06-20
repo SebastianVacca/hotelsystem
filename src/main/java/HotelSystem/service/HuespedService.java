@@ -10,7 +10,7 @@ public interface HuespedService {
     List<Huesped> listarTodas();
     Optional<Huesped> buscarPorId(Long id);
     Huesped crear(Huesped huesped);
-    Huesped actualizar(Huesped huesped);
+    Huesped actualizar(Huesped huesped, Long id);
     void eliminar(Long id);
     List<Huesped> buscarPorNombreOApellido(String texto);
 }
